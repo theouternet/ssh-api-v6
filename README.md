@@ -26,3 +26,5 @@ Things you may want to cover:
 heroku login, then:
 heroku run rails db:migrate -a ssh-api-htest3
 heroku run rails db:seed -a ssh-api-htest3
+https://ssh-api-htest3.herokuapp.com/api/v1/softwares 
+should work
