@@ -24,5 +24,5 @@ Things you may want to cover:
 * ....
 
 heroku login, then:
-
-heroku run rails db:seed
+heroku run rails db:migrate -a ssh-api-htest3
+heroku run rails db:seed -a ssh-api-htest3
