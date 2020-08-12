@@ -15,16 +15,14 @@ ActiveRecord::Schema.define(version: 2) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", id: :serial, force: :cascade do |t|
-    t.string "category_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "softwares", force: :cascade do |t|
     t.string "software_name"
-    t.string "description"
-    t.integer "category_id"
+    t.string "subheader"
+    t.integer "editor_rating"
+    t.integer "user_rating"
+    t.string "image_link"
+    t.string "price"
+    t.string "full_review"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
