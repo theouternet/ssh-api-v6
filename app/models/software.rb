@@ -1,6 +1,4 @@
-class Software < ApplicationRecord
-    belongs_to :category
-    
+class Software < ApplicationRecord    
 
     validates :software_name, presence: true
 
